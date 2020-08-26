@@ -1,0 +1,22 @@
+body
+{
+    float: left;
+    margin: 4px;
+    color: #FFF;
+    background: linear-gradient(#006D80, #E1E6FA);
+h1, h2, p,
+{
+    text-align: center;
+}
+strong
+{
+    color: black
+}
+span
+{
+    color: #C4D7ED
+}
+progress
+{
+    color: gold
+}

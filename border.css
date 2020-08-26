@@ -1,0 +1,11 @@
+h1
+{
+    border: 3px #C4D7ED double;
+	border-radius:3px;
+	box-shadow:3px 2px 4px black;
+	border: justify;
+}
+h1,h2
+{
+    text-shadow: 2px 2px 4px black;
+}

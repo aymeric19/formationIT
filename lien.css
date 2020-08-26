@@ -1,0 +1,9 @@
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: green;
+}
+a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+    color: #AAA; /* Appliquer une couleur grise */
+}
