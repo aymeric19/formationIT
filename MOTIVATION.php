@@ -1,9 +1,14 @@
 <?php
+/*
+Author : Aymeric aymericherchuelz19
+Created Date : 2020-08-27
+Aim : learn toto php and html
+*/
 session_start();
 $titre="Connexion";
-include("connect/identifiants.php");
-include("connect/debut.php");
-include("connect/menu.php");
+//include("connect/identifiants.php");
+//include("connect/debut.php");
+//include("connect/menu.php");
 ?>
 
 <!DOCTYPE html>
@@ -19,12 +24,14 @@ include("connect/menu.php");
     </head>
 
     <body>
-      <h1>Bienvenue</h1>
+      <h1>Bienvenue <?php echo $_SERVER['REMOTE_ADDR'];?> </h1>
+			<h2>Il est actuellement:</h2>
 			<?php
-			if (!isset($_SESSION['pseudo'])) //On est dans la page de formulaire
+			echo date('Y-m-d H:i:s');
+			if (!isset($_POST['pseudo'])) //On est dans la page de formulaire
 			{
 				echo '
-				<form method="post" action="connexion.php">
+				<form method="post" action="MOTIVATION.php">
 				<fieldset>
 				<legend>Connexion</legend>
 				<p>
@@ -36,8 +43,9 @@ include("connect/menu.php");
 				</form>
 				<a href="./register.php">Pas encore inscrit ?</a>';
 			}
+			else{
 			?>
-
+<h3>Bienvenue <?php echo $_POST['pseudo'];?> </h3>
         <!-- header start -->
         <div id="header" class="section">
             <img alt="" class="img-circle" src=>
@@ -139,5 +147,6 @@ Emile MarcelDe Emile Marcel / L'Ombre et le silence</FONT></p>
         <script src="ja.js"></script>
         FLECHE
         </div>
+			<?php } ?>
     </body>
 </html>
