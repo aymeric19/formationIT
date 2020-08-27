@@ -1,3 +1,31 @@
+<?php
+session_start();
+$titre="Connexion";
+include("includes/identifiants.php");
+include("includes/debut.php");
+include("includes/menu.php");
+?>
+<?php
+if (!isset($_POST['pseudo'])) //On est dans la page de formulaire
+{
+	echo '<form method="post" action="connexion.php">
+	<fieldset>
+	<legend>Connexion</legend>
+	<p>
+	<label for="pseudo">Pseudo :</label><input name="pseudo" type="text" id="pseudo" /><br />
+	<label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
+	</p>
+	</fieldset>
+	<p><input type="submit" value="Connexion" /></p></form>
+	<a href="./register.php">Pas encore inscrit ?</a>
+
+	</div>
+	</body>
+	</html>';
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,9 +39,16 @@
     </head>
 
     <body>
-      <p>
-      <?php echo date("d/m/y") ?>
-      </p>
+      <h1>Bivenue</h1>
+      <?php
+      if(isset($_SESSION['pseudo']) ?>
+   <p>Votre pseudo : <?php $_SESSION['pseudo']; ?> </p>
+   <?php>
+ }else {
+   echo "VEellez vous connecter";
+ }
+       ?>
+
         <!-- header start -->
         <div id="header" class="section">
             <img alt="" class="img-circle" src=>
@@ -25,6 +60,11 @@
         <!-- About Me section start -->
         <div class="section">
             <h1><span>Mes motivation</span></h1>
+            <?php
+        echo '<p></p>';
+        echo date("d/m/y");
+        ?>te("d/m/y");
+        ?>
             <p>
                 <FONT size="5pt"> Je me presente je m'appelle <strong>Herchuelz Aymeric</strong><br>
                   Depuis quelques temps, je suis fortement interesse par l'informatique. D'abord attiré, comme beaucoup de mes congenere par les jeux vidéo, j'ai été séduit par les possibilités infinies de création et d'exploration qu'offre l'informatique et ses outils ainsi que des objets connectés aux outils de bureautiques utilisés quotidiennement, en passant par les produits et logiciels.
