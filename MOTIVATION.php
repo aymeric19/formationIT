@@ -78,7 +78,11 @@ Meeting, sharing, learning, helping, collaborating, simplifying people's lives a
 	   <div class="section">
 	        <h2><span>Citation</span></h2>
         <p class="quote"><FONT size="5pt">“Les hommes ont créé des cimetières afin de se fixer dans le temps et, malgré la décomposition dans l'espace.”<br/>
-Emile MarcelDe Emile Marcel / L'Ombre et le silence</FONT></p>
+De Emile Marcel / L'Ombre et le silence"</FONT></p>
+
+<p class="quote"><FONT size="5pt">“
+Men have created cemeteries in order to fix themselves in time and, despite the decomposition in space. »<br/>
+By Emile Marcel / The Shadow and the Silence"</FONT></p>
         </div>
         <!-- About Me section end -->
 
