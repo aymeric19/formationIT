@@ -99,6 +99,15 @@ Emile MarcelDe Emile Marcel / L'Ombre et le silence</FONT></p>
                 <li>php <br />
                     <progress min="0" max="100" value="40"></progress>
                 </li>
+                <li>javascript <br />
+                    <progress min="0" max="100" value="40"></progress>
+                </li>
+                <li>SQL <br />
+                    <progress min="0" max="100" value="20"></progress>
+                </li>
+                <li>wordpress <br />
+                    <progress min="0" max="100" value="60"></progress>
+                </li>
             </ul>
         </div>
         <!-- My Skills section end -->
